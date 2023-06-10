@@ -7,14 +7,14 @@ import { Route, Routes } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { RootReducer, fetchData } from './component/rootReducer';
+import { fetchNotes } from './services/fetchNotes';
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
    
-    dispatch(fetchData());
+    dispatch(fetchNotes());
   }, [dispatch]);
 
   return (
