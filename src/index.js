@@ -4,11 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import rootReducer from './component/rootReducer';
-import { legacy_createStore as createStore } from 'redux';
+import store from './component/thunk'
+import { fetchNotes } from './services/fetchNotes'
 
-
-const store = createStore(rootReducer)
+store.dispatch(fetchNotes)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
