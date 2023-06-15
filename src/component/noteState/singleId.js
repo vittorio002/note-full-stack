@@ -49,7 +49,7 @@ function SingleId (props) {
                     </div>
 
                     <br/>
-                    <textarea onChange={loadChange} className="subtitle" rows="25" cols="100" placeholder='type' >{textDescrizioneValue}</textarea>
+                    <textarea onChange={loadChange} className="subtitle responsive-textarea" placeholder='type' >{textDescrizioneValue}</textarea>
                    
                     <div className="buttons is-centered">
                         <button onClick={toChange} class="button is-success">Salva</button>

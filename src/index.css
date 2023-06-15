@@ -33,3 +33,23 @@ textarea{
 button{
   text-decoration: none;
 }
+
+.responsive-textarea {
+  width: 80%;
+  height: 128px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media (min-width: 640px) {
+  .responsive-textarea {
+    height: 96px;
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-textarea {
+    height: 128px;
+  }
+}
